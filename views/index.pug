@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome 888 to #{title}
+
+  form(method="POST", action="/task" )
+    input(value=10, name="id", type='text')
+    button(type='submit') send
